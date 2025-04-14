@@ -11,5 +11,8 @@ Could you do it without any loop/recursion?
 """
 
 
-non_negative_num = input("Please enter a non-negative number: ") # Input saved as a string
+non_negative_num = int(input("Please enter a non-negative number: ")) # Input saved as a string
+temp = 0
 
+while non_negative_num >= 10:
+    temp += non_negative_num % 10
