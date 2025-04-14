@@ -4,6 +4,6 @@ Do not use extra ariable for another array, you must do this by modifying the in
 O(1) extra memory. You may assume all the characters consist of printable ascii characters.
 """
 
-input_string = list(input("Please input string: "))
+input_string = list(input("Please input string without quotes: ")) # Save Input as a list
 
-print(input_string[::-1])
+print(input_string[::-1]) # Reverse list
