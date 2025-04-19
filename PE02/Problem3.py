@@ -7,3 +7,20 @@ Example 2: Input: ["dog","racecar","car"] Output: ""
 Explanation: There is no common prefix among the input strings.
 Note: All given inputs are in lowercase letters a-z.
 """
+
+
+def longest_common_prefix(array):
+    
+    ans=""
+    str = array[:]
+    str = sorted(str)
+
+    first = str[0]
+    last = str[-1]
+
+    
+    for i in range(min(len(first), len(last))):
+        if(first[i] != last[i]): 
+            return ans  # Return empty if the first and last string doesn't equal
+        ans+=first[i]   # Add character from first list otherwise
+    return ans
