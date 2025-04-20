@@ -40,9 +40,16 @@ class TestPE02(unittest.TestCase):
     
     def test_problem4(self):
         print("Problem 4 is created as a set up for user input.")
-        print("Please run Problem 4 through your command line or terminal.")
+        print("Please run Problem 4 through your command line or terminal.\n")
 
-    
+    def test_problem5(self):
+        print("Problem 5 is made with commands to check multilevel inheritance.")
+        print("Please run Problem 5 through your command line or terminal.\n")
+
+    def test_problem6(self):
+        print("Problem 6 is set up as a set of functions.")
+        print("Please run Problem 6 through the terminal and call each function separately")
+        print("Functions are:\nget_word_count_from_file()\nwrite_in_guest_book()\nread_two_files()")
 
 if __name__=="__main__":
     unittest.main()
